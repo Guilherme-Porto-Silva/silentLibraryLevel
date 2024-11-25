@@ -30,10 +30,13 @@ header{
         padding: 1%;
         margin-bottom: 10%;
         width: 60%;
+        h1, ul{
+        position: relative;
+        right: 20%;
+              }
         h1{
             box-sizing: border-box;
             margin-left: 10px;
-            justify-self: left;
         }
         img{
             position: absolute;
@@ -43,15 +46,11 @@ header{
             width: 200px;
         }
     }
-    ul{
-        position: relative;
-        right: 20%;
         li{
             font-size: larger;
             text-align: left;
         }
     }
-}
 main img, p, li{margin: 2%;}
 a{color: aqua;}
 a:hover{color: blue;}
