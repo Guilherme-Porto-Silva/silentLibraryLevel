@@ -1,0 +1,93 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    color: #ffffff;
+    font-size: large;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    letter-spacing: 1px;
+}
+section, img, header div{
+    outline-style: groove;
+    outline-width: 5px;
+    outline-color: black;
+}
+section, header, p{
+    margin: 10%;
+    width: 80%;
+}
+section{
+    background-image: url("./src/darkWoodenBackground.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+}
+header{
+    div{
+        outline-color: #ffffff;
+        background-color: black;
+        padding: 1%;
+        margin-bottom: 10%;
+        width: 60%;
+        h1{
+            box-sizing: border-box;
+            margin-left: 10px;
+            justify-self: left;
+        }
+        img{
+            position: absolute;
+            left: 55%;
+            top: 37%;
+            outline-style: none;
+            width: 200px;
+        }
+    }
+    ul{
+        position: relative;
+        right: 20%;
+        li{
+            font-size: larger;
+            text-align: left;
+        }
+    }
+}
+main img, p, li{margin: 2%;}
+a{color: aqua;}
+a:hover{color: blue;}
+h1{font-size: larger;}
+.column, .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1%;
+}
+.row{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 1560px) {
+    header div img{
+        top: 18%;
+    }
+}
+@media screen and (max-width: 850px) {
+    header div img{display: none;}
+    section{
+        width: 100%;
+        margin: 0%;
+        outline-style: none;
+    }
+    img, header div{outline-width: 2px;}
+    .row{flex-direction: column;}
+}
+@media screen and (max-width: 400px) {
+    header{
+        ul{right: 1%;}
+        div{width: 90%;}
+    }
+    img{width: 90%;}
+    p{font-size: medium;}
+    .row{flex-direction: column-reverse;}
+}
